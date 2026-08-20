@@ -1,0 +1,351 @@
+/*Whole website*/
+
+body {
+    background-color:white;
+}
+
+/*Nav bar styling*/
+
+.logo-container {
+    display: flex;         
+    align-items: center;   
+    gap: 15px;             
+}
+
+.logo {
+    height: 50px;          
+    width: auto;           
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#012B4B;
+}
+
+ul li {
+    float:left;
+}
+
+ul li a {
+    display:block;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+  background-color:#ffcf40;
+}
+
+/*Fonts*/
+h1 {
+    font-family: "Jacques Francois Shadow", serif;
+    color:#012B4B
+}
+
+h2 {
+    font-family: "Jacques Francois Shadow", serif;
+    color:#012B4B
+}
+
+body {
+    font-family: "Arbutus Slab", serif;
+}
+
+/*Smooth Scrolling */
+html {
+    scroll-behavior:smooth;
+}
+
+/*Tiles*/
+.tile {
+
+background-color:#ffcf40;
+
+border: 2px solid #012B4B;
+
+border-radius: 10px;
+
+padding: 20px;
+
+margin: 10px;
+
+} 
+
+.tiles {
+    
+    display:grid;
+    
+    grid-template-column:repeat(auto-fit, minmax (250px,1fr));
+    
+    gap:20px;
+    
+    paddings:20px;
+
+}
+
+body {
+    color:#012B4B
+}
+
+.home-container {
+    display: flex;
+    gap: 30px;
+}
+
+.home-container .tiles {
+    flex: 1;
+}
+
+/*Title styling*/
+.title h1 {
+    font-size: 50px;
+}
+
+.title h2 {
+    font-size: 30px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title h1 {
+    font-family: "Jacques Francois Shadow", serif;
+    font-size: 70px;
+    margin: 0;
+    color: #012B4B;
+}
+
+.title h2 {
+    font-family: "Jacques Francois Shadow", serif;
+    font-size: 35px;
+    margin: 0;
+    color: #012B4B;
+}
+
+
+/*Home title styling*/
+
+#hometitle {
+    padding: 10px;
+    text-align: center;
+}
+
+/*Achievements title styling*/
+
+#achievementstitle {
+    padding: 10px;
+    text-align: center;
+}
+
+/*Team and player info title styling*/
+
+#tandpinfotitle {
+    padding: 10px;
+    text-align: center;
+}
+
+/*Flip card styling*/
+
+.flip-card {
+    background:transparent;
+    width:220px;
+    height:300px;
+    perspective:1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width:100%;
+    height:100%;
+    transition:transform 0.8s;
+    transform-style:preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position:absolute;
+    width:100%;
+    height:100%;
+    border-radius:10px;
+    backface-visibility:hidden;
+    overflow:hidden;
+}
+
+.flip-card-front {
+    background-color:#012B4B;
+    border: 2px solid #ffcf40;
+    padding: 0px;
+    color:#ffcf40
+}
+
+.flip-card-front img {
+    display: block;
+    margin: 10px auto 0 auto;
+    width:100%;
+    height:240px;
+    object-fit:cover;
+    border: 2px solid #ffcf40;
+
+}
+
+.flip-card-front p{
+    text-align: center;
+    font-weight: bold;
+}
+
+.flip-card-back {
+    background-color:#ffcf40;
+    border: 2px solid #012B4B;
+    padding: 0px;
+    transform: rotateY(180deg)
+}
+
+.player-grid {
+    display: flex;
+    gap: 30px;          
+    flex-wrap: wrap;    
+    justify-content: center; 
+}
+
+/*Achievements styling pictures*/
+
+#dynastypremier {
+    background-color:#012B4B;
+    color:white;
+    padding:10px;
+    margin:5px;
+}
+
+#dynastypremier h1 {
+    color:#ffcf40;
+    padding:10px;
+}
+
+#dynastypictures img {
+    border: 3px solid #ffcf40;
+    margin:10px;
+}
+
+#dynastypictures {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.achievement-image {
+    text-align: center;
+}
+
+.achievement-image p {
+    color: #ffcf40;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+/*Back to Top button */
+.back-to-top {
+    position: fixed;
+    bottom:20px;
+    right:20px;
+    padding:10px 15px;
+    background-color:#012B4B;
+    color:white;
+    text-decoration:none;
+    border:solid #ffcf40;
+    border-radius:5px;
+    z-index: 1000;
+    transition:transform 0.2s ease, background-color 0.2s ease;
+}
+
+.back-to-top:hover {
+    background-color:#ffcf40;
+    border:solid #012B4B;
+    transform:translateY(-3px);
+}
+
+
+
+/*Home page styling*/
+
+.home-layout {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.home-images {
+    width: 30%;
+}
+
+.home-images img {
+    width: 100%;
+    margin-bottom: 30px;
+    border: 3px solid #ffcf40;
+}
+
+.home-content {
+    width: 70%;
+}
+
+.home-content .tiles {
+    margin-bottom: 30px;
+}
+
+/*Video styling*/
+.home-images img,
+.home-images video {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 30px;
+    border: 3px solid #ffcf40;
+}
+
+/*Mini nav bar styling*/
+.page-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.page-links li {
+    margin-bottom: 12px;
+}
+
+.page-links a {
+    display: block;
+    background-color: #012B4B;
+    color: #ffcf40;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 2px solid #ffcf40;
+    font-weight: bold;
+}
+
+.page-links a:hover {
+    background-color: #ffcf40;
+    color: #012B4B;
+}
+
+/*Link colours*/
+.mylink {
+    color:#ffcf40
+}
+
+.mylink2 {
+    color:#012B4B
+}
